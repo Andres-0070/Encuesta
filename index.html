@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title2">Pagina web</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
 
+    h1 {
+      color: yellow;
+      text-align: center;
+    }
+
+    #description {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background-color: #001f3f; /* Azul oscuro */
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    label, select, input, textarea {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: yellow;
+      color: black;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: white;
+      color: black;
+    }
+
+    fieldset {
+      border: 1px solid white;
+      margin-top: 20px;
+    }
+
+    textarea {
+      height: 80px;
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+  
+ <h1 id="title">Formulario de encuesta de freeCodeCamp
+</h1>
+ <p id="description">Gracias por tomarte el tiempo para ayudarnos a mejorar la plataforma</p>
+ 
+ <form id="survey-form">
+ <label><input id="name" name="name" type="text" placeholder="Ingrese su nombre" type="checkbox" required>Nombre:</label>
+ <label><input id="email" name="email" type="email" placeholder="introduce tu correo electronico" required type="checkbox" >Nombre:</label>
+ <label><input id="number" name="number" type="number" placeholder="introduce tu edad" required min="1" max="100" type="checkbox" >Number:</label>
+ <label id="name-label">Ingrese su nombre</label>
+ <label id="email-label">Ingrese su email</label>
+ <label id="number-label">Ingrese su edad</label>
+ 
+ <label for="dropdown">Selecciona una opción: </label>
+<select id="dropdown" name="dropdown">
+  <option value="opcion1">Opción 1</option>
+  <option value="opcion2">Opción 2</option>
+</select>
+
+<fieldset>
+  <legend>Elije una opción:</legend>
+  <label>
+    <input type="radio" name="opcion" value="opcion_a"> Opción A
+  </label>
+  <label>
+    <input type="radio" name="opcion" value="opcion_b"> Opción B
+  </label>
+</fieldset>
+
+<fieldset>
+  <legend>Selecciona opciones:</legend>
+  <label>
+    <input type="checkbox" name="opcion_checkbox" value="opcion_checkbox1"> Opción Checkbox 1
+  </label>
+  <label>
+    <input type="checkbox" name="opcion_checkbox" value="opcion_checkbox2"> Opción Checkbox 2
+  </label>
+
+<textarea>
+
+  </textarea>
+<input type="submit" id="submit"></input>
+
+</fieldset>
+
+</body>
+</html>
